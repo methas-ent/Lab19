@@ -63,7 +63,6 @@ void Unit::newTurn(){
 	guard_on = false;
 }
 
-
 bool Unit::isDead(){
     if(hp <= 0)return true;
     else return false;
@@ -87,6 +86,7 @@ int Unit::beAttacked(int oppatk){
     
     return damage;
 }
+
 int Unit::attack(Unit &user2){
 	return user2.beAttacked(atk);
 }
